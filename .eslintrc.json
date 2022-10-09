@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/warnings",
+    "prettier",
+    "plugin:tailwindcss/recommended"
+  ],
+  "ignorePatterns": ["*.config.js"],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  }
+}
